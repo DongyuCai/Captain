@@ -33,8 +33,8 @@ response.setCharacterEncoding(CharacterEncoding.UTF_8.CHARACTER_ENCODING);
 response.setContentType(ContentType.APPLICATION_HTML.CONTENT_TYPE);
 PrintWriter writer = response.getWriter();
 writer.write(html);
-writer.flush();
-writer.close();
+//writer.flush();
+//writer.close();
 } catch (Exception e) {
 e.printStackTrace();
 }
