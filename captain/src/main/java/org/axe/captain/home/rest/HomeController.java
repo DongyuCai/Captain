@@ -18,13 +18,12 @@ import org.axe.constant.ContentType;
 import org.axe.constant.RequestMethod;
 import org.axe.home.interceptor.HomeInterceptor;
 import org.axe.home.interceptor.SignInInterceptor;
-import org.axe.interface_implement.mvc.AxeRequestParamAnalyzeInterceptor;
 import org.axe.util.CollectionUtil;
 import org.axe.util.HttpUtil;
 import org.axe.util.JsonUtil;
 
 @FilterFuckOff
-@Interceptor({ AxeRequestParamAnalyzeInterceptor.class, HomeInterceptor.class, SignInInterceptor.class })
+@Interceptor({ HomeInterceptor.class, SignInInterceptor.class })
 @Controller(basePath = "axe-captain")
 public class HomeController {
 
